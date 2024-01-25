@@ -1,0 +1,27 @@
+<div class='welcome-message'>
+    <h1>The Tech Blog </h1>
+    <p>Our blog covers a wide range of topics, including programming languages, cutting-edge advancements, and hands-on tutorials.</p>
+    <p>Ready to share your thoughts or contribute your knowledge? Create an account to start writing your own blog posts or engage with the community through comments. Let the learning and sharing begin!</p>
+    
+    <!-- Button linking to the login page -->
+    <a href='/login'><button class='btn btn-primary cta-button' type='submit' >Create an Account</button></a>
+</div>
+
+{{#each blogs as |blog| }}
+<div class='row mb-4 blog'>
+  <div class='col-md-5'>
+    <h2>
+      <!-- Link to emoji and title of blog -->
+      <a class='title' href='/blog/{{blog.id}}'>{{{get_emoji}}} {{blog.title}}</a>
+    </h2>
+
+    <!-- Display the date blog was created and the author -->
+    <p class='author'>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+  </div>
+  
+  <div class='col-md-7'>
+    <!-- Display the blog description -->
+    <p>{{blog.description}}</p>
+  </div>
+</div>
+{{/each}}
