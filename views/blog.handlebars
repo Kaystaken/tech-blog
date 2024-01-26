@@ -1,9 +1,14 @@
 <div class='text-left blog'>
+
+  <!--displays title-->
   <h2>{{title}}</h2>
+  <!--dsiplasy description-->
   <p>{{description}}</p>
+  <!--displays who wrote it and when-->
   <p class='text-right author'>Created by: {{user.name}} on {{format_date date_created}}</p>
   
   {{#if logged_in}}
+  <!-- logged in users can use the form to comment-->
   <form class='form comment-form'>
     <div class='form-group'>
       <label for='comment'>Your Comment:</label>

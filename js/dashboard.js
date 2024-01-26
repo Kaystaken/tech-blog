@@ -40,7 +40,7 @@ const updateButtonHandler = async (event) => {
   };
 }
 
-const delButtonHandler = async (event) => {
+const deleteButtonHandler = async (event) => {
   if (event.target.hasAttribute('delete')) {
     const id = event.target.getAttribute('delete');
 
@@ -66,4 +66,4 @@ document
 
 document
   .querySelector('.blog-list')
-  .addEventListener('click', delButtonHandler);
+  .addEventListener('click', deleteButtonHandler);

@@ -20,9 +20,9 @@ const commentHandler = async (event) => {
       } else {
           alert('Failed to post comment');
       }
-  }
+    }
 };
 
 document
-.querySelector('.comment-form')
-.addEventListener('submit', commentHandler);
+    .querySelector('.comment-form')
+    .addEventListener('submit', commentHandler);
