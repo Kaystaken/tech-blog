@@ -4,7 +4,7 @@
     <p> Create an account and start to engage with the community through writing your own blog posts or comments.</p>
     
     <!-- Button linking to the login page -->
-    <a href='/login'><button class='btn btn-primary cta-button' type='submit' >Create an Account</button></a>
+    <a href='/login'><button class='btn btn-primary cta-button' type='submit' >Create Account</button></a>
 </div>
 
 {{#each blogs as |blog| }}
@@ -15,8 +15,8 @@
       <a class='title' href='/blog/{{blog.id}}'>{{{get_emoji}}} {{blog.title}}</a>
     </h2>
 
-    <!-- Display the date blog was created and the author -->
-    <p class='author'>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+    <!-- Displays who created the blog and when -->
+    <p class='author'>Created by: {{blog.user.name}} on {{format_date blog.date_created}}</p>
   </div>
   
   <div class='col-md-7'>
