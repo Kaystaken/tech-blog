@@ -1,10 +1,12 @@
 <div class='welcome-message'>
     <h1>The Tech Blog </h1>
     <p>Fun and imformative blogs. Feel free to share blogs of your own or just read and comment on others.</p>
-    <p> Create an account and start to engage with the community through writing your own blog posts or comments.</p>
+    {{#unless logged_in}}
+      <p> Create an account and start to engage with the community through writing your own blog posts or comments.</p>
     
-    <!-- Button linking to the login page -->
-    <a href='/login'><button class='btn btn-primary cta-button' type='submit' >Create Account</button></a>
+      <!-- Button linking to the login page -->
+      <a href='/login'><button class='btn btn-primary cta-button' type='submit' >Create Account</button></a>
+    {{/unless}}
 </div>
 
 {{#each blogs as |blog| }}

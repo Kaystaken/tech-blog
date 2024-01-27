@@ -6,10 +6,12 @@ const withAuth = require('../../utils/auth');
 router.get('/:id', withAuth, async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id);
+    
     if (!blogData) {
-      res.status(404).json({ message: 'Blog post not found' });
-      return;
-    } res.status(200).json(blogData);
+      return res.status(404).json({ message: 'Blog post not found' });
+    }
+    
+    res.status(200).json(blogData);
   } catch (error) {
     console.error('Error retrieving blog post:', error);
     res.status(500).json({ error: 'Internal server error' });
@@ -41,8 +43,7 @@ router.put('/:id', withAuth, async (req, res) => {
     });
 
     if (!blogData) {
-      res.status(404).json({ message: 'No blog found with this id!' });
-      return;
+      return res.status(404).json({ message: 'No blog found with this id!' });
     }
 
     res.status(200).json(blogData);
@@ -62,8 +63,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!blogData) {
-      res.status(404).json({ message: 'No blog found with this id!' });
-      return;
+      return res.status(404).json({ message: 'No blog found with this id!' });
     }
 
     res.status(200).json(blogData);
@@ -79,10 +79,9 @@ router.post('/comment', withAuth, async (req, res) => {
       ...req.body,
       user_id: req.session.user_id,
     });
-    console.log(newComment)
+
     res.status(200).json(newComment);
   } catch (err) {
-    console.log(err);
     res.status(400).json(err);
   }
 });
