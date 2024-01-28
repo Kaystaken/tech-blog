@@ -3,18 +3,14 @@
 ## Description
 CMS style blog site
 
-
 ### Motivation
+A place for developers can publish their blog posts and comment on other developers’ posts as well.
 
-### Why?
+### Links
 
-### Problem Solved
+Repo: https://github.com/Kaystaken/tech-blog
 
-### Installation
-
-### Usage
-
-### Credits
+Deployed App:
 
 ### License
 
