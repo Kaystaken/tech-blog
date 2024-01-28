@@ -4,7 +4,7 @@
 CMS style blog site
 
 ### Motivation
-A place for developers can publish their blog posts and comment on other developers’ posts as well.
+A place where developers can publish their blog posts and comment on other developers’ posts as well.
 
 ### Links
 
