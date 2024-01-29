@@ -4,7 +4,16 @@ require('dotenv').config();
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  sequelize = new Sequelize(process.env.JAWSDB_URL, {
+      dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false
+        }
+      }
+    }
+  );
+  sequelize.authenticate();
 } else {
   // Create Sequelize instance for local MySQL database
   sequelize = new Sequelize(
