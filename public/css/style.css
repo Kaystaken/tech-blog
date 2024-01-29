@@ -36,6 +36,9 @@ nav a {
   color: #fff;
   text-decoration: none;
   margin-right: 15px;
+  border-style: dashed;
+  padding: 7px;
+  font-style: bolder;
 }
 
 /* Style the main container */
@@ -47,11 +50,13 @@ nav a {
 
 /* Style the logout button */
 #logout {
-  background-color: #ff0000;
-  color: #fff;
+  background-color: #f7f3f3;
+  color: #0667ef;
   padding: 5px 10px;
-  border: none;
+  border-style: double;
   cursor: pointer;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Add spacing utility classes */
@@ -92,6 +97,7 @@ nav a {
 /* Style the title */
 .blog h2 {
   color: #007bff;
+
 }
 
 /* Style the description */
@@ -138,20 +144,24 @@ nav a {
 
 /* Style the comment card container */
 .comment-card {
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 25px;
+  background-color: #ffffff;
+  margin: 25px;
+
 }
 
 .comment-card h4 {
   color: #333;
+  
 }
 
 .comment-card p {
   color: #555;
+
 }
 
 .comment-card .author {
-  color: #777;
+
 }
 
 /* Style the login CTA button */
@@ -285,17 +295,24 @@ nav a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .welcome-message h1 {
   color: #007bff;
-  text-shadow: ;
+  font-weight: bolder;
+  
 }
 
 .welcome-message p {
   color: #555;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  padding: 25px;
   background-color: #eef2f6;
+  border-radius: 15px;
+  font-weight: bolder;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .cta-button {
@@ -310,6 +327,7 @@ nav a {
 
 .cta-button:hover {
   background-color: #0056b3;
+  font-weight: bolder;
 }
 
 /* Style individual blog entries */
@@ -327,6 +345,7 @@ nav a {
 
 .blog h2 a:hover {
   text-decoration: underline;
+  font-weight: bolder;
 }
 
 .blog .author {
@@ -411,6 +430,7 @@ nav a {
 
 .btn-primary:hover {
   background-color: #0056b3;
+  font-weight: bolder;
 }
 
 /* Responsive styles for small screens */
