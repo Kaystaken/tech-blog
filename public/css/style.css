@@ -1,0 +1,421 @@
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  color: white;
+
+}
+
+/* Style the navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* Style the main container */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the logout button */
+#logout {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add spacing utility classes */
+.mt-5 {
+  margin-top: 5px;
+}
+
+/* Flexbox utility classes */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+/* Style the blog container */
+.blog {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the title */
+.blog h2 {
+  color: #007bff;
+}
+
+/* Style the description */
+.blog p {
+  color: #555;
+}
+
+/* Style the author information */
+.blog .author {
+  color: #777;
+}
+
+/* Style the comment form */
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.comment-form .form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-form .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the comment card container */
+.comment-card {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.comment-card h4 {
+  color: #333;
+}
+
+.comment-card p {
+  color: #555;
+}
+
+.comment-card .author {
+  color: #777;
+}
+
+/* Style the login CTA button */
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the greeting row */
+.row h2 {
+  color: #333;
+  margin-left: 20px;
+}
+
+/* Style the form for creating a new blog post */
+.new-blog-form {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.new-blog-form h3 {
+  color: #333;
+  
+}
+
+.new-blog-form .form-group {
+  margin-bottom: 15px;
+}
+
+.new-blog-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.new-blog-form .form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-blog-form .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the blog list */
+.blog-list {
+  margin-top: 0px;
+  margin-left: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  margin-right: 25px;
+}
+
+.blog-list h3 {
+  color: #333;
+}
+
+.blog-list h4 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-list h4 a:hover {
+  text-decoration: underline;
+}
+
+/* Style the buttons for updating and deleting a blog */
+.blog-list .btn {
+  margin-right: 5px;
+}
+
+.blog-list .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.blog-list .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Add spacing utility classes */
+.mb-2 {
+  margin-bottom: 10px;
+  /* Adjust as needed */
+}
+
+.mt-4 {
+  margin-top: 20px;
+  margin left: 20px;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .col-md-8,
+  .col-md-4 {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Style the welcome message */
+.welcome-message {
+  text-align: center;
+  padding: 50px;
+  background-color: #c9e0f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.welcome-message h1 {
+  color: #007bff;
+  text-shadow: ;
+}
+
+.welcome-message p {
+  color: #555;
+  margin-bottom: 15px;
+  background-color: #eef2f6;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style individual blog entries */
+.blog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog h2 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog h2 a:hover {
+  text-decoration: underline;
+}
+
+.blog .author {
+  color: #777;
+}
+
+.blog p {
+  color: #555;
+}
+
+/* Add spacing utility class */
+.mb-4 {
+  margin-bottom: 20px;
+  /* Adjust as needed */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+  .col-md-5,
+  .col-md-7 {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* Style the login and signup sections */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.col-md-6 {
+  width: 48%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+
+/* Style the form containers */
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Style the form headings */
+.form h2 {
+  color: #333;
+}
+
+/* Style form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style submit buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}
