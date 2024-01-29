@@ -10,7 +10,7 @@ A place where developers can publish their blog posts and comment on other devel
 
 Repo: https://github.com/Kaystaken/tech-blog
 
-Deployed App:
+Deployed App: https://techishblog-eb51edfb19f7.herokuapp.com/ 
 
 ### License
 
